@@ -5,7 +5,7 @@ TODO: this HTML should expose a search bar
 <div class="search-bar-wrapper">
     <input type="text" class="search-bar-input" ng-model="searchText" ng-change="update()"/>
 
-    <div ng-repeat="product in productsList" class="autocomplete-result">
-        {{product.name}}
-        </div>
+    <div ng-repeat="product in results" class="autocomplete-result">
+        {{ product.name }}
+    </div>
 </div>

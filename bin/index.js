@@ -135,8 +135,8 @@ exports.SearchBarController = function($scope, $http) {
     $scope.update = function() {
         $http.
         get('/api/v1/product/text/' + $scope.searchText).
-        success(function(data) {
-                $scope.results =  data;
+        success(function(response) {
+                $scope.results =  response.products;
             }
         );
     };
